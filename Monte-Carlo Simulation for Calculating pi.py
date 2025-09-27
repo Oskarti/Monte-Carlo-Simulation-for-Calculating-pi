@@ -21,6 +21,8 @@ def calculate_pi(numSamples):
             insideCircle += 1
 
     # Calculate pi by using the ratio of the 2x2 square area and the unit circle area
+    # Area of square = 4, area of circle = pi * 1^2 = pi
+    # Therefore, pi = 4 * (insideCircle/numSamples)
     pi = 4 * (insideCircle/numSamples)
 
     return pi
@@ -28,3 +30,4 @@ def calculate_pi(numSamples):
 # Get user input for number of iterations and print calculated value of pi
 numIterations = input("Enter the number of iterations to run: ")
 print(calculate_pi(int(numIterations))) 
+
